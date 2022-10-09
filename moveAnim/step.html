@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Step</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		main {
+			width: 800px;
+			padding-top: 20vh;
+			margin: 0 auto;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		ul {
+			margin-top: 24px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 24px;
+		}
+
+		li {
+			display: flex;
+			align-items: center;
+			padding: 0 24px;
+			height: 56px;
+			border-radius: 16px;
+			border: 4px solid #666;
+		}
+
+		li:hover {
+			color: #ff0000;
+		}
+
+		li>input {
+			cursor: pointer;
+			margin-right: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h1>
+			移动动画状态机和BlendTree
+		</h1>
+		<ul>
+			<li>
+				<input type="checkbox">
+				<p>
+					角色素材图切割
+				</p>
+			</li>
+			<li>
+				<input type="checkbox">
+				<p>
+					运动状态分类：闲置Idle、移动Walk
+				</p>
+			</li>
+			<li>
+				<input type="checkbox">
+				<p>
+					制作Idle、Walk各个动画
+				</p>
+			</li>
+			<li>
+				<input type="checkbox">
+				<p>
+					通过BlendTree状态机控制动画切换
+				</p>
+			</li>
+		</ul>
+	</main>
+</body>
+
+</html>

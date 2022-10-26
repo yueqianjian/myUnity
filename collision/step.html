@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Step</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		main {
+			width: 800px;
+			padding-top: 20vh;
+			margin: 0 auto;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		ul {
+			margin-top: 24px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 24px;
+		}
+
+		li {
+			display: flex;
+			align-items: center;
+			padding: 0 24px;
+			height: 56px;
+			border-radius: 16px;
+			border: 4px solid #666;
+		}
+
+		li:hover {
+			color: #ff0000;
+		}
+
+		li>input {
+			cursor: pointer;
+			margin-right: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h1>
+			敌人(刚体)碰撞不撞飞和线性阻力
+		</h1>
+		<ul>
+			<li>
+				<input type="checkbox">
+				<p>
+					生成主角和敌人两个刚体
+				</p>
+			</li>
+			<li>
+				<input type="checkbox">
+				<p>
+					设置线性阻力让碰撞后的速度减小
+				</p>
+			</li>
+			<li>
+				<input type="checkbox">
+				<p>
+					设置质量来满足碰撞效果
+				</p>
+			</li>
+		</ul>
+	</main>
+</body>
+
+</html>

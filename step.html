@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Step</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		main {
+			width: 800px;
+			padding-top: 20vh;
+			margin: 0 auto;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		ul {
+			margin-top: 24px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 24px;
+		}
+
+		li {
+			display: flex;
+			align-items: center;
+			padding: 0 24px;
+			height: 56px;
+			border-radius: 16px;
+			border: 4px solid #666;
+		}
+
+		li:hover {
+			color: #ff0000;
+		}
+
+		li>input {
+			cursor: pointer;
+			margin-right: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h1>
+			UI交互选择框、血条和中文字体
+		</h1>
+		<ul>
+			<li>
+				<input type="checkbox">
+				<p>
+					设定UI界面分成几个区域，并用Panel来做区域包裹
+				</p>
+			</li>
+			<li>
+				<input type="checkbox">
+				<p>
+					在Panel里填写想要的UI组件并设置
+				</p>
+			</li>
+			<li>
+				<input type="checkbox">
+				<p>
+					Unity默认没有中文，先自行下载中文字体
+				</p>
+			</li>
+			<li>
+				<input type="checkbox">
+				<p>
+					通过字体创建Unity字体并在Text上使用
+				</p>
+			</li>
+			<li>
+				<input type="checkbox">
+				<p>
+					选择框按钮等交互组件，监听交互事件
+				</p>
+			</li>
+		</ul>
+	</main>
+</body>
+
+</html>
